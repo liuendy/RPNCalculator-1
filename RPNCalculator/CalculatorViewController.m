@@ -15,9 +15,16 @@
 @end
 
 @implementation CalculatorViewController
+
 @synthesize display = _display;
 @synthesize userIsInTheMiddleOfEnteringNumber = _userIsInTheMiddleOfEnteringNumber;
 @synthesize brain = _brain;
+
+- (CalculatorBrain *)brain {
+    
+    if(!_brain) _brain = [[CalculatorBrain alloc] init]; // Lazy Instantiation
+    return  _brain;
+}
 
 - (IBAction)digitPressed:(UIButton *)sender {
     
@@ -38,9 +45,12 @@
 }
 
 - (IBAction)operationPressed:(id)sender {
+    // For example, 6 Enter 4 - would be the same as 6 Enter 4 Enter -.
+    if (self.userIsInTheMiddleOfEnteringNumber) {
+        [self enterPressed];
+    }
     
     NSString *operation = [sender currentTitle];
-    
     double result = [self.brain performOperation:operation];
     self.display.text = [NSString stringWithFormat:@"%g", result];
 }
