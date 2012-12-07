@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		976369801672362B00AF48F7 /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9763697F1672362B00AF48F7 /* CalculatorBrain.m */; };
 		97A3E20D166E232800805444 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A3E20C166E232800805444 /* UIKit.framework */; };
 		97A3E20F166E232800805444 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A3E20E166E232800805444 /* Foundation.framework */; };
 		97A3E211166E232800805444 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A3E210166E232800805444 /* CoreGraphics.framework */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9763697E1672362B00AF48F7 /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		9763697F1672362B00AF48F7 /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
 		97A3E208166E232800805444 /* RPNCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPNCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A3E20C166E232800805444 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		97A3E20E166E232800805444 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -82,6 +85,8 @@
 				97A3E21E166E232800805444 /* MainStoryboard.storyboard */,
 				97A3E221166E232800805444 /* CalculatorViewController.h */,
 				97A3E222166E232800805444 /* CalculatorViewController.m */,
+				9763697E1672362B00AF48F7 /* CalculatorBrain.h */,
+				9763697F1672362B00AF48F7 /* CalculatorBrain.m */,
 				97A3E213166E232800805444 /* Supporting Files */,
 			);
 			path = RPNCalculator;
@@ -164,6 +169,7 @@
 				97A3E219166E232800805444 /* main.m in Sources */,
 				97A3E21D166E232800805444 /* CalculatorAppDelegate.m in Sources */,
 				97A3E223166E232800805444 /* CalculatorViewController.m in Sources */,
+				976369801672362B00AF48F7 /* CalculatorBrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +281,7 @@
 				97A3E228166E232800805444 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
